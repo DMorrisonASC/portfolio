@@ -46,7 +46,7 @@ ul#horizontal-list {
 /* The div around the "About Daeshaun" + <p> */
 #about-self-block {
   background-color: chocolate;
-  width: 100vw;
+  width: 100%;
 }
 #dispear-photo {
   display: flex;
