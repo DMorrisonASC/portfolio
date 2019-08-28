@@ -47,12 +47,14 @@ ul#horizontal-list {
 #about-self-block {
   background-color: chocolate;
   width: 100%;
+
 }
-#dispear-photo {
+#dispear-section {
   display: flex;
   justify-content:center;
+  box-shadow: 10px 5px;
 }
-#dispear-photo-mobile{
+#dispear-section-mobile {
   display:none;
 }
 
@@ -63,6 +65,7 @@ ul#horizontal-list {
 }
 .self-photo {
   width: 50%;
+  box-shadow: 10px 5px;
 
 }
 
@@ -129,11 +132,11 @@ footer {
   .self-photo {
     width: 100%;
   }
-  #dispear-photo {
+  #dispear-section {
     display: none;
 
   }
-  #dispear-photo-mobile{
+  #dispear-section-mobile{
     display:block;
   }
 }
