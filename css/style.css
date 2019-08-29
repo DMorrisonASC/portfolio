@@ -4,17 +4,31 @@ body {
   margin: 0;
   height: 100vh;
   box-sizing: border-box;
+  font-family: Tahoma, Verdana, sans-serif;
 }
 * {
   margin: 0px;
   padding: 0px;
+}
+/* Gives li bullet points */
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
 p {
   font-size: 20px;
 }
 header {
   height: 10%;
-  background-color: lightcoral;
+  background-color: #CBE86B;
+  box-shadow: 0 8px 6px -6px black;
+  position: relative;
+  z-index: 5;
 }
 main {
   min-height: 80%;
@@ -26,7 +40,7 @@ main {
 }
 .nav-list {
   margin-right: 10px;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .table {
@@ -38,6 +52,7 @@ ul#horizontal-list {
   list-style: none;
   text-align: center;
   margin-top: 10px;
+  
 	}
 	ul#horizontal-list li {
     display: inline;
@@ -45,15 +60,21 @@ ul#horizontal-list {
 	}
 /* The div around the "About Daeshaun" + <p> */
 #about-self-block {
-  background-color: chocolate;
+  background-color:  #CBE86B;
   width: 100%;
 
+
 }
+/* This div appears when screen width is greater then 600px */
 #dispear-section {
+  width: 100%;
   display: flex;
   justify-content:center;
-  box-shadow: 10px 5px;
+  box-shadow: 0 8px 6px -6px black;
+  position: relative;
+  z-index: 5;
 }
+/* This div appears when screen width is less then 600px */
 #dispear-section-mobile {
   display:none;
 }
@@ -62,38 +83,53 @@ ul#horizontal-list {
   text-align: left;
   padding: 10px;
   word-wrap: break-word;
+  font-size: 20px;
 }
 .self-photo {
-  width: 50%;
-  box-shadow: 10px 5px;
+  width: 100%;
 
 }
 
 /* resume block, the div around the "Resume" + <p> */
 #resume-block {
-  background-color: orange;
-  width: 100%;
+  background-color:  #CBE86B;
+  position: relative;
+  z-index: 4;
+  padding: 10px;
+  border-bottom: 5px #EB6841 dashed;
 }
-/* portfolio block */
+/* portfolio block, the div around the "Portfolio" + <p> */
 #portfolio-block {
-  background-color: green;
   height: 30%;
   width: 100%;
   word-wrap: break-word;
   display: flex;
+  border-bottom: 5px brown dashed;
+  background-color:  #EB6841;
+  padding-bottom: 10px;
 }
   .project-block:hover {
   background-color: green;
-  box-shadow: 10px 5px;
+  box-shadow: 0 8px 6px -6px black;
+  position: relative;
+  z-index: 2;
 
   }
-/* The div around the "Portfolio" + <p> */
+  .project-block:active {
+    background-color: green;
+    box-shadow: 0 8px 6px -6px black;
+    position: relative;
+    z-index: 2;
+  
+    }
+
 .project-block {
-  background-color: crimson;
+  background-color:  #EB6841;
   width: 25%;
   word-wrap: break-word;
   border: 1px solid black;
   box-sizing: border-box;
+
 }
 
 
@@ -107,6 +143,9 @@ Example .img-project's width is 25% the width of .project-block */
 #testimonal-block {
   width: 100%;
   background-color: brown;
+
+  position: relative;
+  z-index: 1;
 }
 footer {
   height: 10%;
@@ -123,11 +162,11 @@ footer {
     font-size: 20px;
   }
   
-  #about-self-info {
+  .about-self-info {
     text-align: left;
     padding-left: 10px;
     word-wrap: break-word;
-    font-size: 20px;
+    font-size: 17px;
   }
   .self-photo {
     width: 100%;
@@ -138,6 +177,9 @@ footer {
   }
   #dispear-section-mobile{
     display:block;
+    box-shadow: 0 8px 6px -6px black;
+    position: relative;
+    z-index: 5;
   }
 }
 
