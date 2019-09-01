@@ -143,7 +143,6 @@ Example .img-project's width is 25% the width of .project-block */
 
 /* testimonal block */
 #testimonal-block {
-  width: 100%;
   background-color: brown;
   padding: 20px;
   position: relative;
