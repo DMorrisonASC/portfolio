@@ -2,138 +2,68 @@
 <html lang="en">
 
 <head>
-  <script src="assets\sketch.js" defer></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" type="text/css" href="css\style.css" />
-  <title>Protofolio - Daeshaun Morrison</title>
+  <script src=".\assets\sketch.js" defer></script>
+  <title>Portofolio - Daeshaun Morrison</title>
+  <!-- Scripts -->
+  <script src="assets\sketch.js" defer></script>
+  <!-- Import Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div id="menu-outer">
-      <div class="table">
-        <ul id="horizontal-list">
-          <li class="nav-list"><a href="#resume-block">Resume</a></li>
-          <li class="nav-list"><a href="#portfolio-block">Projects</a></li>
-          <li class="nav-list"><a href="#testimonal-block">Testimonals</a></li>
-          <li class="nav-list"><a href="mailto:daeshaunkmorrison@gmail.com"><img
-                style="width: 35px; margin-left: 30px; margin-top: 10px;"
-                src="assets\Img\envelope-mail-icon-black-on-260nw-468747272.png"></a></li>
-          <li class="nav-list"><a href="#testimonal-block"><img style="width: 35px"
-                src="assets\Img\linkedin-logo.png"></a></li>
-
+    <nav>
+      <div>
+        <ul class="disappear">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#testimonial">Resume</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#home">Home</a></li>
         </ul>
       </div>
-    </div>
+      <div class="dropdown disappear-mobile">
+        <button onclick="useDropdown()" class="dropbtn">≡</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
   </header>
   <main>
-    <!-- About Me section -->
-    <!-- This appears for mobile -->
-    <div id="about-self-block">
-      <fiqure id="dispear-section-mobile" style="width: 100%">
-        <img class="self-photo" src=".\assets\Img\0.jpg" />
-        <figcaption class="about-self-info">Hi I am Daeshaun Morrison, current Highschool stduent planning to major
-          in Computer Science. I began
-          I began to code when I was 13, after attending a coding class in middle school. Since then I have attending
-          many classes, workshops and programs.
-          Using the knowledge to create mobile and Web Application for different companies.
-        </figcaption>
-      </fiqure>
-      <!-- This appears for Desktop -->
-      <div id="dispear-section">
-
-        <p class="about-self-info">
-          <span style="text-align: center;">Who am I?</span><br>Hi I am Daeshaun Morrison, current Highschool stduent
-          planning to major
-          in Computer Science. I began
-          I began to code when I was 13, after attending a coding class in middle school. Since then I have attending
-          many classes, workshops and programs.
-          Using the knowledge to create mobile and Web Application for different companies.
-        </p>
-        <img class="self-photo" src=".\assets\Img\0.jpg" />
+    <img src=".\assets\Img\0.jpg" id="self-photo">
+    <p>Hi I am Daeshaun Morrison, current Highschool stduent planning to major in Computer Science. I began I began to
+      code when I was 13, after attending a coding class in middle school. Since then, I have attending many classes,
+      workshops and programs. Using the knowledge to create mobile and Web Application for different companies.
+    </p>
+    <h1>Skills</h1>
+    <div class="logos">
+      <div class="logo">
+        <img src=".\assets\Img\html5.png">
+        <p>HTML</p>
+      </div>
+      <div class="logo">
+        <img src=".\assets\Img\css3.png">
+        <p>CSS</p>
+      </div>
+      <div class="logo">
+        <img src=".\assets\Img\JS.png">
+        <p>Javascript</p>
+      </div>
+      <div class="logo">
+        <img src=".\assets\Img\photoshop-logo.png">
+        <p>Abobe Photoshop</p>
       </div>
     </div>
-    <!-- Resume section -->
-    <div id="resume-block">
-      <h2 style="text-align: center">Resume</h2>
-      <h4>Dynasty Rentals, New York City, NY<br> Sept 2016
-        - Present
-        Photo-Booth Operator
-      </h4>
-      <ul class="keepBulletPoints">
-        <li>Set-up the photo booth - assembling, programming, and maintenance </li>
-        <li>Assist in taking photos and distributing to the appropriate customers</li>
-        <li>Explain the procedure of using the photo booth to customers</li>
-        <li>Telecommunicate promotional offers</li>
-      </ul>
-      <h4>Goldman Sacks, Jersey City, N.J<br> July 2019 - August 2019
-        Software Engineer
-      </h4>
-      <ul class="keepBulletPoints">
-        <li>Mentored by multiple engineers to obtain the necessary skills to succeed in the tech field. </li>
-        <li>Visited many tech companies in order to gain more knowledge of the work environment.
-        </li>
-        <li>Operated in a group of 4 to create a Demo project(web or mobile app) that solves one social justice issue or
-          saves consumers money to investors and donors.
-        </li>
-
-      </ul>
-    </div>
-    <!-- Portfolio section -->
-    <h2 style="text-align: center; background-color: #EB6841;
-      box-shadow: 0 8px 6px -6px black;
-  position: relative;
-  z-index: 3;">Portfolio</h2>
-    <div id="portfolio-block">
-
-      <figure class="project-block">
-        <a href="https://dynastyrental.com/">
-          <img class="img-project" src="assets\Img\dynastyrental_thumbnail.PNG" />
-          <figcaption>DynastyRentals - A party equipment rental company.</figcaption>
-        </a>
-      </figure>
-
-
-      <figure class="project-block">
-        <a href="http://daeshaun-todo-app.herokuapp.com/">
-          <img class="img-project" src="assets\Img\Annotation 2019-08-29 104832.png" />
-          <figcaption>A time management web app - uses the pomodoro technique to make goals easier to achieve.
-          </figcaption>
-        </a>
-      </figure>
-
-      <figure class="project-block">
-        <a href="https://dmorrisonasc.github.io/gifSearch/">
-          <img class="img-project" src="assets\Img\Annotation 2019-09-02 170357.png" />
-          <figcaption>
-            Search your favourite GIFS - using GIPHY API.
-          </figcaption>
-        </a>
-      </figure>
-
-      <figure class="project-block">
-        <a href="https://dmorrisonasc.github.io/FizzBuzzChallenge/">
-          <img class="img-project" src=".\assets\Img\Annotation 2020-02-23 161833.png" />
-          <figcaption>Fizz buzz is a game for children to teach them about division. Players take turns to
-            count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible
-            by five with the word "buzz".
-          </figcaption>
-        </a>
-      </figure>
-
-    </div>
-    <!-- Testimonal section -->
-    <div id="testimonal-block">
-      <h2 style="text-align: center">Testimonal</h2>
-      <p>
-        "Daeshaun is very enthusiastic and hardworker, determined to accomplish any challenge and/or solve any problem
-        that can come up in his path" - Stanly Rodriguez
-      </p>
-    </div>
   </main>
-  <footer></footer>
+  <footer>
+  </footer>
+
 </body>
 
 </html>

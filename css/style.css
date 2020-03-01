@@ -1,210 +1,140 @@
-/* Removes all margins for elements */
-html,
-body {
-  margin: 0;
-  height: 100vh;
-  box-sizing: border-box;
-  font-family: Tahoma, Verdana, sans-serif;
-}
+/* Elements */
 * {
   margin: 0px;
   padding: 0px;
-}
-/* Gives li bullet points */
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-
-}
-p {
-  font-size: 20px;
-}
-figcaption {
-  padding: 5px;
-  font-family: Tahoma, Verdana, sans-serif;
-  font-size: 13px;
-}
-
-header {
-  background-color: #CBE86B;
-  box-shadow: 0 8px 6px -6px black;
-  position: relative;
-  z-index: 5;
-
-}
-main {
-  min-height: 80%;
-}
-/* Navigation is in the header */
-
-#menu-outer {
- margin: none;
-}
-.nav-list {
-  margin-right: 10px;
-  font-size: 30px;
-}
-
-.table {
-	display: table;   /* Allow the centering to work */
-	margin: 0 auto;
-}
-
-ul#horizontal-list {
-  list-style: none;
-  text-align: center;
-  margin-top: 10px;
-   
-	}
-	ul#horizontal-list li {
-    display: inline;
-
-	}
-/* The div around the "About Daeshaun" + <p> */
-#about-self-block {
-  background-color:  #CBE86B;
-
-}
-/* This div appears when screen width is greater then 600px */
-#dispear-section {
-  display: flex;
-  justify-content:center;
-  box-shadow: 0 8px 6px -6px black;
-  position: relative;
-  z-index: 5;
-}
-/* This div appears when screen width is less then 600px */
-#dispear-section-mobile {
-  display:none;
-}
-
-.about-self-info {
-  text-align: left;
-  padding: 10px;
-  word-wrap: break-word;
-  font-size: 20px;
-}
-.self-photo {
-  width: 100%;
-
-}
-
-/* resume block, the div around the "Resume" + <p> */
-#resume-block {
-  background-color:  #EDC951;
-  position: relative;
-  z-index: 4;
-  padding: 10px;
-  border-bottom: 5px #EB6841 dashed;
-}
-
-/* portfolio block, the div around the "Portfolio" + <p> */
-#portfolio-block {
-  height: 30%;
-  word-wrap: break-word;
-  display: flex;
-  border-bottom: 5px brown dashed;
-  background-color:  #EB6841;
-  padding-bottom: 10px;
-}
-.project-block {
-  background-color:  #EB6841;
-  width: 25%;
-  word-wrap: break-word;
-  border: 1px solid black;
+  font-family: 'Oswald', sans-serif;
   box-sizing: border-box;
-
-}
-  .project-block:hover {
-  background-color: green;
-  box-shadow: 0 8px 6px -6px black;
-  position: relative;
-  z-index: 2;
-
-  }
-  .project-block:active {
-    background-color: green;
-    box-shadow: 0 8px 6px -6px black;
-    position: relative;
-    z-index: 2;
-  
-    }
-
-/* Note:When using percentages, elements take size based size of div.
-Example .img-project's width is 25% the width of .project-block */
-.img-project {
-  width: 100%;
-  height: 50%;
+} 
+header {
+  background-color: #333333;
 }
 
-/* testimonal block */
-#testimonal-block {
-
-  background-color: brown;
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-}
 footer {
-  height: 10%;
-  background-color: orange;
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+}
+main p {
+  font-size: 1.2em;
+  color: #5e5e5e;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main h1 {
+  font-size: 1.4em;
+  color: #1a1a1a;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Code for navigation bar in desktop */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
 
+li {
+  float: right;
 }
-/* genernal classes */
-.noLine {
-  text-decoration: none;
-  color: inherit;
-}
-/* Gives li bullet-points back */
-.keepBulletPoints {
+
+a {
   display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
 }
 
+li a:hover {
+  background-color: #111111;
+} 
+/* The navigation bar for mobile disappears when screen is larger than 768px */
+.disappear-mobile {
+  display: none;
+}
+/* Main */
+#self-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+  border: black solid 4px;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logos p {
+  text-align: center;
+}
+.logo {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
 
-/* Media Queries */
-
+/* Code for navigation bar in mobile */
 @media only screen and (max-width: 768px) {
-  .nav-list {
+
+  .dropbtn {
+    background-color: #333333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .dropdown-content a {
+    display: none;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #111111;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {background-color: #ddd;}
+
+  .show {display: block;}
+  /* The navigation bar for PC disappears when screen is smaller than 768px */
+  .disappear {
+    display: none;
+  }
+  /* Logos for programming languages need to smaller */
+  .logo img {
+    width: 95px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     margin-right: 10px;
-    font-size: 20px;
   }
   
-  .about-self-info {
-    text-align: left;
-    padding-left: 10px;
-    word-wrap: break-word;
-    font-size: 17px;
-  }
-  .self-photo {
-    width: 100%;
-  }
-  #dispear-section {
-    display: none;
 
-  }
-  #dispear-section-mobile{
-    display:block;
-    box-shadow: 0 8px 6px -6px black;
-    position: relative;
-    z-index: 5;
-  }
-  .project-block {
-    background-color:  #EB6841;
-    width: 25%;
-    height: 350px;
-    word-wrap: break-word;
-    border: 1px solid black;
-    box-sizing: border-box;
-  }
 }
-
