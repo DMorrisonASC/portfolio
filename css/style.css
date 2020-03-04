@@ -8,6 +8,15 @@
 header {
   background-color: #333333;
 }
+h1 {
+  background-color: #f5f6f7;
+  margin: 10px;
+}
+.project-block figcaption {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.6em;
+}
 
 footer {
   background-color: black;
@@ -19,6 +28,9 @@ main p {
   color: #5e5e5e;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #f5f6f7;
+  margin: 10px;
+  margin-bottom: 20px;
 }
 main h1 {
   font-size: 1.4em;
@@ -40,7 +52,7 @@ li {
   float: right;
 }
 
-a {
+nav a {
   display: block;
   color: white;
   text-align: center;
@@ -78,10 +90,37 @@ li a:hover {
   flex-direction: column;
   margin: 10px;
 }
+  /* Project block, it controls how projects are shown */
+  /* portfolio block, the div around the "portfolio" + <figcation> */
+  .dispear-section ul {
+    width: 40%;
+  }
+  .portfolio-block {
+    word-wrap: break-word;
+    display: flex;
+    }
+    /* The seperate products */
+    .project-block {
+    background-color: #333333;
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+    }
+    .project-block figcaption {
+      color: white;
+    }
+    
+    /* Note:When using percentages, elements take size based size of div.
+    Example .img-project's width is 25% the width of .project-block */
+    .img-project {
+      width: 100%;
+      height: 50%;
+  }
 
 /* Code for navigation bar in mobile */
 @media only screen and (max-width: 768px) {
-
+  
   .dropbtn {
     background-color: #333333;
     color: white;
@@ -124,9 +163,23 @@ li a:hover {
   .dropdown a:hover {background-color: #ddd;}
 
   .show {display: block;}
+  /* Other code */
   /* The navigation bar for PC disappears when screen is smaller than 768px */
   .disappear {
     display: none;
+  }
+  main p {
+    font-size: 1.2em;
+    color: #5e5e5e;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main h1 {
+    font-size: 1.4em;
+    color: #1a1a1a;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   /* Logos for programming languages need to smaller */
   .logo img {
