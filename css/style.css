@@ -15,7 +15,7 @@ h1 {
 .project-block figcaption {
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 footer {
@@ -91,7 +91,7 @@ li a:hover {
   margin: 10px;
 }
   /* Project block, it controls how projects are shown */
-  /* portfolio block, the div around the "portfolio" + <figcation> */
+  /* portfolio block, the div around the "portfolio" + <figcaption> */
   .dispear-section ul {
     width: 40%;
   }
