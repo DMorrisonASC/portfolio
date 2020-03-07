@@ -1,0 +1,193 @@
+/* Elements */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+} 
+header {
+  background-color: #333333;
+}
+h1 {
+  background-color: #f5f6f7;
+  margin: 10px;
+}
+.project-block figcaption {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1em;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+}
+main p {
+  font-size: 1.2em;
+  color: #5e5e5e;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f5f6f7;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+main h1 {
+  font-size: 1.4em;
+  color: #1a1a1a;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Code for navigation bar in desktop */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: right;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+} 
+/* The navigation bar for mobile disappears when screen is larger than 768px */
+.disappear-mobile {
+  display: none;
+}
+/* Main */
+#self-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+  border: black solid 4px;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logos p {
+  text-align: center;
+}
+.logo {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+  /* Project block, it controls how projects are shown */
+  /* portfolio block, the div around the "portfolio" + <figcaption> */
+  .dispear-section ul {
+    width: 40%;
+  }
+  .portfolio-block {
+    word-wrap: break-word;
+    display: flex;
+    }
+    /* The seperate products */
+    .project-block {
+    background-color: #333333;
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    border: 1px solid white;
+    }
+    .project-block figcaption {
+      color: white;
+    }
+    
+    /* Note:When using percentages, elements take size based size of div.
+    Example .img-project's width is 25% the width of .project-block */
+    .img-project {
+      width: 100%;
+      height: 50%;
+  }
+
+/* Code for navigation bar in mobile */
+@media only screen and (max-width: 768px) {
+  
+  .dropbtn {
+    background-color: #333333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .dropdown-content a {
+    display: none;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #111111;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {background-color: #ddd;}
+
+  .show {display: block;}
+  /* Other code */
+  /* The navigation bar for PC disappears when screen is smaller than 768px */
+  .disappear {
+    display: none;
+  }
+  main p {
+    font-size: 1.2em;
+    color: #5e5e5e;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main h1 {
+    font-size: 1.4em;
+    color: #1a1a1a;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* Logos for programming languages need to smaller */
+  .logo img {
+    width: 95px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+
+}
