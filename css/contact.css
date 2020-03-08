@@ -1,0 +1,9 @@
+i {
+    color: rgb(13, 148, 238);
+}
+.icons-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
