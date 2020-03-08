@@ -4,14 +4,14 @@
   padding: 0px;
   font-family: 'Oswald', sans-serif;
   box-sizing: border-box;
-} 
+}
+main a {
+  color: white;
+}
 header {
   background-color: #333333;
 }
-h1 {
-  background-color: #f5f6f7;
-  margin: 10px;
-}
+
 .project-block figcaption {
   padding-left: 10px;
   padding-right: 10px;
@@ -34,9 +34,18 @@ main p {
 main h1 {
   text-align: center;
   color: #1a1a1a;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #f5f6f7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* Keeps text centered */
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;  
+}
+i {
+  color: white;
+  font-size: 30px;
+  margin: 10px;
 }
 /* Code for navigation bar in desktop */
 ul {
@@ -76,15 +85,15 @@ li a:hover {
   width: 50%;
   border: black solid 4px;
 }
-.logos {
-  display: flex;
-  flex-wrap: wrap;
-}
 .logos-container {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
 }
 .logo {
   align-self: flex-end;
@@ -127,13 +136,52 @@ li a:hover {
       width: 100%;
       height: 50%;
   }
-    /* Makes the PC's version disappear */
-    .portfolio-block-mobile {
-      display: none;
-    }
-    footer img {
-      width: 10px;
-    }
+  .logos-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+  /* Logos for programming languages need to smaller */
+  .logo img {
+    width: 95px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+/* Icon for contact (LinkedIn, Email and Github) */
+.icons-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* Makes the PC's version disappear */
+.portfolio-block-mobile {
+  display: none;
+  }
+
 
 /* Code for navigation bar in mobile */
 @media (min-width: 320px) and (max-width: 768px) {
@@ -195,9 +243,7 @@ li a:hover {
   main h1 {
     font-size: 1.4em;
     color: #1a1a1a;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 100%;
   }
   /* Logos for programming languages need to smaller for mobile */
   .logo img {
@@ -238,6 +284,12 @@ li a:hover {
   /* Makes the PC's version disappear */
   .portfolio-block {
     display: none;
+  }
+  .icons-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
   }
   
 
