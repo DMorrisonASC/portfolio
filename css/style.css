@@ -77,12 +77,16 @@ li a:hover {
 }
 /* Main */
 #self-photo {
+  /* margin-top: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  border: black solid 4px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 50%;
+  width: 15%;
   border: black solid 4px;
 }
 .logos-container {
@@ -164,7 +168,7 @@ li a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 206px;
 }
 .icons {
   display: flex;
@@ -232,6 +236,15 @@ li a:hover {
   /* The navigation bar for PC disappears when screen is smaller than 768px */
   .disappear {
     display: none;
+  }
+  #self-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+    border: black solid 4px;
   }
   main p {
     font-size: 1.2em;
