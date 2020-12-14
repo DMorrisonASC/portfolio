@@ -47,6 +47,20 @@ i {
   font-size: 30px;
   margin: 10px;
 }
+  /* css for download button */
+  .downBtn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /* Darker background on mouse-over */
+  .downBtn:hover {
+    background-color: RoyalBlue;
+  }
 /* Code for navigation bar in desktop */
 ul {
   list-style-type: none;
@@ -305,5 +319,4 @@ li a:hover {
     width: 60%;
   }
   
-
 }
