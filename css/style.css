@@ -23,18 +23,19 @@ footer {
 }
 main p {
   font-size: 1.2em;
-  color: #5e5e5e;
-  background-color: #f5f6f7;
+  color: #ffffff;
+  background-color: #303030;
   display: block;
   /* Keeps text centered */
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  padding: 5px;
 }
 main h1 {
   text-align: center;
-  color: #1a1a1a;
-  background-color: #f5f6f7;
+  color: #fffafa;
+  background-color: #303030;
   margin-top: 10px;
   margin-bottom: 10px;
   /* Keeps text centered */
@@ -262,7 +263,6 @@ li a:hover {
   }
   main p {
     font-size: 1.2em;
-    color: #5e5e5e;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
